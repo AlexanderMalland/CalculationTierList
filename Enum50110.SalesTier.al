@@ -8,7 +8,7 @@ enum 50110 "Sales Tier"
     }
     value(1; Silver)
     {
-        Caption = 'Silver';
+        Caption = 'Silber';
     }
     value(2; Gold)
     {
@@ -16,7 +16,11 @@ enum 50110 "Sales Tier"
     }
     value(3; Platinum)
     {
-        Caption = 'Platinum';
+        Caption = 'Platin';
     }
+
+
+
+    
 
 }
