@@ -20,13 +20,13 @@ codeunit 50110 SalesTier implements ISalesTier
     begin
         case SalesTier of
             SalesTier::Bronze:
-                exit(0.1);
+                exit(0.05);
             SalesTier::Silver:
-                exit(0.2);
+                exit(0.1);
             SalesTier::Gold:
-                exit(0.3);
+                exit(0.15);
             SalesTier::Platinum:
-                exit(0.4);
+                exit(0.25);
 
 
         end;
@@ -44,7 +44,7 @@ codeunit 50110 SalesTier implements ISalesTier
 
         if not Discount.FindFirst() then begin
             Discount.Init();
-            Discount.Validate("Customer No.", SalesHeader."Sell-to Customer No."); 
+            Discount.Validate("Customer No.", SalesHeader."Sell-to Customer No.");
             Discount.Insert();
         end;
 
